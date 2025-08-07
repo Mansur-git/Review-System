@@ -223,10 +223,10 @@ body {
         ele.addEventListener('click', () => {
         rating = Number(ele.dataset.value);
         Array.from(stars).forEach(star => {
-        star.classList.toggle('selected', Number(star.dataset.value) <= rating);
-                });
-            });
-        });
+        star.classList.toggle('selected', Number(star.dataset.value) <= rating)
+                })
+            })
+        })
 
       // on submit
       submit.addEventListener('click',()=>{
@@ -246,7 +246,7 @@ body {
         prevRev.prepend(li)
         curRev.value=''
         rating = undefined
-        Array.from(stars).forEach(star => star.classList.remove('selected'));
+        Array.from(stars).forEach(star => star.classList.remove('selected'))
 
         }
         else{
